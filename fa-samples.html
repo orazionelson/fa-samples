@@ -81,22 +81,25 @@ color:#D6230E;
 }
 </style>
 		<div class="section">
-		<h3>Combine with Bootstrap buttons:</h3>
-		<div style="margin-bottom:20px;"><a class="btn btn-md btn-primary btn-faceb" href="#" title="follow me on facebook">
-		<i class="fa fa-facebook-square fa-lg"></i>&nbsp;&nbsp; Like this page</a></div>
-		<div style="margin-bottom:20px;"><a class="btn btn-md btn-warning" href="#" title="get rss">
-		<i class="fa fa-rss-square fa-lg"></i>&nbsp;&nbsp; Follow our RSS</a></div>		
+			<h3>Combine with Bootstrap buttons:</h3>
+			<!--facebook-->
+			<div style="margin-bottom:20px;"><a class="btn btn-md btn-primary btn-faceb" href="#" title="follow me on facebook">
+			<i class="fa fa-facebook-square fa-lg"></i>&nbsp;&nbsp; Like this page</a></div>
+			<!--RSS-->
+			<div style="margin-bottom:20px;"><a class="btn btn-md btn-warning" href="#" title="get rss">
+			<i class="fa fa-rss-square fa-lg"></i>&nbsp;&nbsp; Follow our RSS</a></div>		
+			
+			<!-- Google plus -->
+			<div style="margin-bottom:20px;">
+				<a href="#" rel=author class="btn btn-md gplus">
+					<span class="fa-stack fa-1x">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-google-plus fa-stack-2x fa-inverse"></i>
+					</span>
+					Follow me on G+
+				</a>
+			</div>
 		</div>
-		<div style="margin-bottom:20px;">
-			<a href="#" rel=author class="btn btn-md gplus">
-				<span class="fa-stack fa-1x">
-				<i class="fa fa-square fa-stack-2x"></i>
-				<i class="fa fa-google-plus fa-stack-2x fa-inverse"></i>
-				</span>
-				Follow me on G+
-			</a>
-		</div>
-		
 <style>
 .tr-menu{
 	margin:0;
@@ -233,11 +236,9 @@ color:#D6230E;
 </style>
 <script>
 $(document).ready(function() {
-$( "#drinkandrive" )
-//.hover(function()
-.one("mouseenter", function(e) 
+$( "#drinkandrive" ).one("mouseenter", function(e) 
 {
-  $( ".dontdrive span" ).animate({marginLeft:'60%'}, 2000);
+  $( ".dontdrive span" ).animate({marginLeft:'50%'}, 2000);
   $(".driveban").css('visibility', 'visible').animate({opacity: 1.0}, 2000);
   $(".commercial").animate({'padding-top':'40px'},2000);
 
@@ -246,23 +247,22 @@ $( "#drinkandrive" )
 });
 </script>
 <div class="section row" id="dadmessage">
-	<h3>Make fun alerts</h3>
-<div class="col-md-8">
-<h3 style="text-align:center">Don't drive, you have to drink :)</h3>
-</div>
-</div><!-- /.sectionr -->
-	<div class="section row" id="drinkandrive">
-		<div class="col-md-4 dontdrive">
-		<span class="fa-stack fa-lg">
-			<i class="fa fa-truck fa-stack-1x fa-flip-horizontal"></i>
-			<i class="fa fa-ban fa-stack-2x text-danger driveban"></i>		
-		</span>
-		</div>
-		<div class="col-md-1 commercial">&amp;</div>
-		<div class="col-md-3 drink">
-			<i class="fa fa-beer fa-2x fa-flip-horizontal"></i>
-		</div>
+	<div class="col-md-8">
+	<h3 style="text-align:center">Don't drive, you have to drink :)</h3>
 	</div>
+</div><!-- /.section -->
+<div class="section row" id="drinkandrive">
+	<div class="col-xs-6 col-md-4 dontdrive">
+	<span class="fa-stack fa-lg">
+		<i class="fa fa-truck fa-stack-1x fa-flip-horizontal"></i>
+		<i class="fa fa-ban fa-stack-2x text-danger driveban"></i>		
+	</span>
+	</div>
+	<div class="col-xs-1 col-md-1 commercial">&amp;</div>
+	<div class="col-xs-5 col-md-3 drink">
+		<i class="fa fa-beer fa-2x fa-flip-horizontal"></i>
+	</div>
+</div>
 </div><!-- /.container -->
 <br><br><br><br><br><br>
 </body>
