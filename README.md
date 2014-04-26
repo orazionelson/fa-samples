@@ -8,5 +8,9 @@ This page shows some possible uses of FonAwesome icon set (http://fontawesome.io
 See the complete post at: http://nelsondev.blogspot.it/2014/04/awesome-icons-with-font-awesome.html
 
 by Alfredo Cosco 2014
+
+www.nelsonweb.it
+
 orazio.nelson [at] gmail.com
+
 Twitter: @orazio_nelson
